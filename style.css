@@ -700,11 +700,7 @@ a {
   -webkit-box-shadow: 0px 4px 5px 0px rgba(186, 186, 186, 1);
   -moz-box-shadow: 0px 4px 5px 0px rgba(186, 186, 186, 1);
 }
-.xz {
-  width: 100px;
-  height: 100px;
-  background-color: green;
-}
+
 .p-modal {
   color: #757575;
   font-family: Roboto;

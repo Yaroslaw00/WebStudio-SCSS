@@ -1,3 +1,25 @@
+body {
+  font-family: "Roboto" sans-serif-serif;
+}
+
+:root {
+  --titles: #212121;
+  --paraghraphs: #757575;
+}
+
+[href="./index.html"] {
+  color: #212121;
+  text-decoration: none;
+}
+li,
+h2,
+h3 {
+  color: var(--titles);
+}
+p,
+a {
+  color: var(--paraghraphs);
+}
 .a:hover {
   color: #2196f3;
 }
