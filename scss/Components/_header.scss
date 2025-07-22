@@ -28,9 +28,15 @@ a {
   display: flex;
 }
 .container {
-  width: 1200px;
+  width: 420px;
   padding: 0 15px;
   margin: 0 auto;
+  @media (min-width: 768px) {
+    width: 768px;
+  }
+  @media (min-width: 1200px) {
+    width: 1200px;
+  }
 }
 .header {
 }
