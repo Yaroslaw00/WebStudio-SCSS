@@ -883,6 +883,22 @@ a {
   line-height: normal;
   letter-spacing: 0.28px;
 }
+@media (min-width: 768px) {
+  .list-info {
+    display: block;
+    margin-left: 96px;
+    padding-top: 19px;
+    padding-bottom: 21px;
+  }
+}
+@media (min-width: 1200px) {
+  .list-info {
+    display: flex;
+    margin-left: 344px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
 
 .a {
   text-decoration: none;
@@ -905,6 +921,11 @@ a {
 .email {
   list-style: none;
   margin-right: 50px;
+}
+@media (min-width: 768px) {
+  .email {
+    margin-bottom: 12px;
+  }
 }
 
 .phone_number {
