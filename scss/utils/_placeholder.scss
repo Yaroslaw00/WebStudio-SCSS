@@ -1,3 +1,131 @@
-%flexbox {
+%flex-center {
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+// === TEXT ===
+%text-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+%heading {
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+%text-center {
+  text-align: center;
+}
+
+%uppercase {
+  text-transform: uppercase;
+}
+
+// === HIDE / SHOW ===
+%hidden {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+%invisible {
+  visibility: hidden;
+  opacity: 0;
+}
+
+// === POSITIONING ===
+%abs-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+%cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+// === IMAGES ===
+%responsive-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+// === TRANSITIONS / EFFECTS ===
+%transition {
+  transition: all 0.3s ease;
+}
+
+%hover-scale {
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+// === COMPONENTS ===
+%card {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+%btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  @extend %transition;
+}
+
+%btn-primary {
+  @extend %btn;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+
+  &:hover {
+    background-color: #0056b3;
+  }
+}
+
+// === UTILITIES ===
+%full-width {
+  width: 100%;
+}
+
+%full-height {
+  height: 100%;
+}
+
+%overflow-auto {
+  overflow: auto;
+}
+
+%scroll-hidden {
+  -ms-overflow-style: none; /* IE 10+ */
+  scrollbar-width: none; /* Firefox */
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
