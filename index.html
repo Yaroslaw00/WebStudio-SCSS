@@ -36,7 +36,13 @@
           <b class="Web" style="color: #2196f3">Web</b
           ><b class="Studio">Studio</b></a
         >
-        <nav class="nav">
+            <button class="burger">
+              <svg class="burger-icon">
+                <use href="./img/menu_40px.svg"></use>
+              </svg>
+            </button>
+        <div class="header-info">
+           <nav class="nav">
           <ul class="header-list">
             <li class="list-item">Студія</li>
             <li class="list-item">Портфоліо</li>
@@ -51,10 +57,12 @@
             <a class="phone" href="tel:+380961111111">+38 096 111 11 11</a>
           </li>
         </ul>
+        </div>
+       
       </div>
     </header>
 
-    <!-- <main class="main">
+    <main class="main">
       <section class="services">
         <div class="container">
           <h1 class="main-title-of-services">
@@ -63,7 +71,7 @@
           <button class="main-button" type="submit" data-modal-open>Замовити послугу</button>
         </div>
       </section>
-
+<!-- 
       <section class="about-skills">
         <div class="container">
           <h2 class="main-title-of-skills"></h2>
@@ -345,11 +353,11 @@
         </div>
         </div>
         
-    </footer>
+    </footer> -->
    <div data-modal class="backdrop is-hidden  ">
-    <div class="modal is-open">
+    <div class="modal">
       
-      <button class="close" data-modal-close="" >X</button>
+      <button class="close" data-modal-close>X</button>
       <h3 class="h3-modal">Залиште свої дані, ми вам передзвонимо</h3>
       <ul class="list-modal">
         <li class="li-modal">
@@ -416,7 +424,7 @@
       
     </div>
     
-   </div>  -->
+   </div>  
   </body>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="./modal.js"></script>

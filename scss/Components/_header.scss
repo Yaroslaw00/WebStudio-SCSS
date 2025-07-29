@@ -26,9 +26,14 @@ a {
 
 .flex {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @media (min-width: 768px) {
+    justify-content: flex-start;
+  }
 }
 .container {
-  width: 420px;
+  width: 480px;
   padding: 0 15px;
   margin: 0 auto;
   @media (min-width: 768px) {
@@ -36,6 +41,24 @@ a {
   }
   @media (min-width: 1200px) {
     width: 1200px;
+  }
+}
+.burger {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 40px;
+  height: 40px;
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+.burger-icon {
+}
+.header-info {
+  display: none;
+  @media (min-width: 768px) {
+    display: flex;
   }
 }
 .header {
