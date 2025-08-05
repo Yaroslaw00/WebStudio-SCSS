@@ -1,12 +1,39 @@
 .about-skills {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  @media (min-width: 480px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .main-title-of-skills {
 }
 .list-of-skills {
-  display: flex;
   list-style: none;
+  @media (max-width: 767px) {
+    display: block;
+    justify-content: center;
+  }
+  @media (min-width: 768px) {
+    display: grid;
+
+    grid-template-columns: repeat(2, 354px);
+
+    grid-template-rows: repeat(2, 224px);
+
+    justify-content: center;
+
+    gap: 30px 30px;
+  }
+  @media (min-width: 1200px) {
+    display: flex;
+  }
 }
 .skill:not(:last-child) {
   margin-right: 30px;
@@ -19,6 +46,15 @@
   background: #f5f4fa;
   padding: 30px 100px 30px 100px;
   margin-bottom: 30px;
+  @media (min-width: 480px) {
+    width: 450px;
+  }
+  @media (min-width: 768px) {
+    width: 354px;
+  }
+  @media (min-width: 1200px) {
+    width: 270px;
+  }
 }
 .title-of-skill {
   color: var(--titles);
@@ -29,6 +65,10 @@
   line-height: normal;
   letter-spacing: 0.42px;
   text-transform: uppercase;
+  @media (max-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 .text-of-skill {
   line-height: calc(24 / 14);
@@ -39,4 +79,8 @@
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0.42px;
+  @media (max-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
 }
