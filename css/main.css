@@ -7,6 +7,11 @@
 .about-us {
   padding-bottom: 94px;
 }
+@media (max-width: 1199px) {
+  .about-us {
+    display: none;
+  }
+}
 
 .about-activities {
   display: flex;
@@ -563,14 +568,34 @@
   cursor: pointer;
 }
 
+@media (min-width: 480px) {
+  .section-clients {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media (min-width: 768px) {
+  .section-clients {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
 .list-of-clients {
-  display: flex;
   list-style: none;
+}
+@media (min-width: 480px) {
+  .list-of-clients {
+    display: grid;
+    grid-template-columns: repeat(2, 92px);
+    grid-template-rows: repeat(3, 210px);
+    gap: 30px 30px;
+    justify-content: center;
+  }
 }
 
 .Active-clients {
   text-align: center;
-  margin-top: 94px;
 }
 
 .svg {
@@ -626,6 +651,12 @@
   width: 20px;
   height: 20px;
   fill: #ffffff;
+}
+@media (min-width: 480px) {
+  .svg2 {
+    width: 106px;
+    height: 60px;
+  }
 }
 
 .join-icon {

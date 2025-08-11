@@ -222,13 +222,28 @@
   background-color: #2196f3;
   cursor: pointer;
 }
+.section-clients {
+  @media (min-width: 480px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
 .list-of-clients {
-  display: flex;
   list-style: none;
+  @media (min-width: 480px) {
+    display: grid;
+    grid-template-columns: repeat(2, 92px);
+    grid-template-rows: repeat(3, 210px);
+    gap: 30px 30px;
+    justify-content: center;
+  }
 }
 .Active-clients {
   text-align: center;
-  margin-top: 94px;
 }
 .svg {
   fill: #afb1b8;
@@ -277,6 +292,10 @@
   width: 20px;
   height: 20px;
   fill: #ffffff;
+  @media (min-width: 480px) {
+    width: 106px;
+    height: 60px;
+  }
 }
 .join-icon {
   width: 44px;

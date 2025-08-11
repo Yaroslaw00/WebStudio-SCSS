@@ -1,5 +1,8 @@
 .about-us {
   padding-bottom: 94px;
+  @media (max-width: 1199px) {
+    display: none;
+  }
 }
 .about-activities {
   display: flex;
