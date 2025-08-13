@@ -234,12 +234,12 @@
 }
 .list-of-clients {
   list-style: none;
+  justify-content: center;
   @media (min-width: 480px) {
     display: grid;
     grid-template-columns: repeat(2, 92px);
     grid-template-rows: repeat(3, 210px);
     gap: 30px 30px;
-    justify-content: center;
   }
 }
 .Active-clients {
