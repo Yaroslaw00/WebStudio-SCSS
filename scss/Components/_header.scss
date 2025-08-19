@@ -54,6 +54,8 @@ a {
   }
 }
 .burger-icon {
+  width: 40px;
+  height: 40px;
 }
 .header-info {
   display: none;
@@ -62,9 +64,14 @@ a {
   }
 }
 .header {
+  padding-bottom: 16px;
+  padding-top: 16px;
 }
 .header-a {
-  padding-bottom: 15px;
+  align-items: center;
+  @media (min-width: 768px) {
+    padding-bottom: 18px;
+  }
 }
 .Web {
   color: #2196f3;
